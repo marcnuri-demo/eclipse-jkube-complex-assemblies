@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>{title}</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <div class="quarkus-is-qute">
+    <h1>Eclipse JKube, Quarkus and Qute</h1>
+    <p>
+      If you deployed this in a Kubernetes compatible cluster using Eclipse JKube
+      (<code>mvn package k8s:build k8s:resource k8s:apply</code>) you'll be able to see all of the JKube
+      processed fragments.
+    </p>
+    <p>
+      If you are running this application in your local environment (<code>mvn quarkus:dev</code>)
+      you'll only be able to see the first fragment and a few errors indicating that some files are
+      not available.
+    </p>
+    <div>{markdownInResources.raw}</div>
+    <div>{markdownInJKubeAssembly.raw}</div>
+    <div class="debug-info">{markdownFiltered.raw}</div>
+  </div>
+</body>
+</html>

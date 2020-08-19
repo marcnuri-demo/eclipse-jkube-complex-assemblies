@@ -1,0 +1,81 @@
+:root {
+  --default-spacing: 6px;
+  --base-background: rgb(231, 232, 234);
+  --base-font-family: "Open Sans", verdana, sans-serif;
+  --base-font-family-mono: "Roboto Mono", monospace;
+  --base-font-size: 16px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--base-background);
+  font-size: var(--base-font-size);
+  font-family: var(--base-font-family);
+  font-weight: 400;
+}
+
+h1 {
+  margin: 1.5rem 0;
+  font-size: 3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+h2 {
+  margin: 1.5rem 0;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+}
+p:not(:last-child) {
+  margin-bottom: var(--default-spacing);
+}
+
+code {
+  color: #943000;
+  font-family: var(--base-font-family-mono);
+}
+
+.quarkus-is-qute {
+  margin: 0 auto;
+  padding: var(--default-spacing);
+  max-width: 1200px;
+}
+
+div.debug-info {
+  display: block;
+  margin: 1rem 0;
+  border: 1px solid #4695EB;
+  background: #282a36;
+  color: #EEEEEE;
+  padding: var(--default-spacing);
+  font-family: var(--base-font-family-mono);
+  white-space: pre;
+  unicode-bidi: embed;
+}
+
+div.debug-info p {
+  margin: 0;
+}
+
+div.debug-info .error {
+  display: initial;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+label.error {
+  display: block;
+  margin: 1rem 0;
+  border: 1px solid #4695EB;
+  background: #282a36;
+  color: #ffb0b0;
+  padding: var(--default-spacing);
+  font-family: var(--base-font-family-mono);
+}
